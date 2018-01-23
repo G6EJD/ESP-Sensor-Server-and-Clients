@@ -6,11 +6,18 @@ A sensor server that receives and displays on a webpage client data, usually fro
 3. Choose an IP address for your Server e.g. 192.168.0.99
 4. Edit the Server IP address accordingly.
 5. Test the Server by complining and uploading to either an ESP8266 or ESP32, the code adapts accordingly. Make sure you choose the correct board type!
-6. Test the server by typeing the a browser address bar:
+6. Test the server by typing this in a browser address bar:
 http://sensorserver.local/sensor?Sensor=1&temperature=21.2&humidity=50.1&pressure=1001&spare=0&sensortype="Mine"
 
 Or if your PC does not have 'Bonjour' installed, this is needed to resolve mult-cast DNS packets and resolves the address sesnorserver.local to the IP address, in which case enter in the browser address bar:
 
 http://192.168.0.99/sensor?Sensor=1&temperature=21.2&humidity=50.1&pressure=1001&spare=0&sensortype="Mine"
 
+For Clients, find the example IP address of 192.168.0.99 and edit this to match your choice of IP address.
+
+For the Clients, wire your sensors accordingly and change the sensor pins in the Source code to match your pins. 
+
+Compile and upload
+
 Adjust the names and types and units as desired.
+
