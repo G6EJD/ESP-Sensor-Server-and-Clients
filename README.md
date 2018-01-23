@@ -21,3 +21,7 @@ Compile and upload
 
 Adjust the names and types and units as desired.
 
+To see the sensors use http://sensorserver.local/sensor or http://192.168.0.99/sensor
+
+To test the server use http://sensorserver.local/ or http://192.168.0.99/
+
