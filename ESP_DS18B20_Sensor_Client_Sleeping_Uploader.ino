@@ -20,7 +20,7 @@
 #endif
 #include <WiFiClient.h>   // Built-in
 
-#include <OneWire.h>
+//include <OneWire.h> //Removed because now included in latest DallTemperature library, created a conflict
 #include <DallasTemperature.h>
 
 #define sensor_pin 21
