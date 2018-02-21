@@ -1,1 +1,8 @@
 
+These are the icons for the Sensor-Server Advanced code.
+
+The server supports icons files of the type PNG, JPG, GIF and BMP.
+
+FIle names must conform to the standrad 8.3 so '12345678.123' or filename.bmp, etc.
+
+No more than 8 characters for the filename and no more than 3 characters for the file extension.
