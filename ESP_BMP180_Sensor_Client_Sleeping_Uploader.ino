@@ -116,7 +116,8 @@ void SendHttpPOST() {
     }
   }
   client.println("GET /"+UploadData+" HTTP/1.1\n\r");
-  client.println("Host: "+String(ServerHost)); 
+  client.println("Host: "+String(ServerHost));
+  delay(500); // Delay needed for ESP32
   client.println("Connection: close"); 
   client.stop();
 }
