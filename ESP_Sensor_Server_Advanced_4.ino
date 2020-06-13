@@ -998,8 +998,10 @@ void ConstructGraph(record_type displayed_SensorData[], int start, int number_of
   // https://developers.google.com/chart/interactive/docs/basic_preparing_data
   // https://developers.google.com/chart/interactive/docs/reference#google.visualization.arraytodatatable and See appendix-A
   // data format is: [field-name,field-name,field-name] then [data,data,data], e.g. [12, 20.5, 70.3]
-  webpage += F("<script type=\"text/javascript\" src=\"https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['corechart']}]}\"></script>");
-  webpage += F("<script type=\"text/javascript\"> google.setOnLoadCallback(drawChart);");
+  webpage += F("<script type=\"text/javascript\" src=\"https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['corechart']}]}/\"></script>");
+  webpage += F("<script type=\"text/javascript\">");
+  webpage += F("google.charts.load('current', {packages: ['corechart', 'line']});");
+  webpage += F("google.setOnLoadCallback(drawChart);");
   webpage += F("function drawChart() {");
   webpage += F("var data = google.visualization.arrayToDataTable(");
   webpage += F("[['R','"); webpage += ytitle + "'],";
