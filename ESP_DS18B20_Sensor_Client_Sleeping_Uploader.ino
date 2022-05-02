@@ -92,8 +92,8 @@ void setup() {
   Serial.println("...Connecting to Wi-Fi");
   WiFi.mode(WIFI_STA);
   // AP Wi-Fi credentials
-  wifiMulti.addAP("ssid_from_AP_1"  "your_password_for_AP_1");
-  wifiMulti.addAP("ssid_from_AP_2"  "your_password_for_AP_2");
+  wifiMulti.addAP("ssid_from_AP_1", "your_password_for_AP_1");
+  wifiMulti.addAP("ssid_from_AP_2", "your_password_for_AP_2");
   wifiMulti.addAP("ssid_from_AP_3", "your_password_for_AP_3");
   // Etc
   while (wifiMulti.run() != WL_CONNECTED) { // Wait for the Wi-Fi to connect: scan for Wi-Fi networks, and connect to the strongest of the networks above
